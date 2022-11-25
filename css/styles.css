@@ -14,12 +14,14 @@
 
 .nav-link{
     font-size: 1.5rem;
+
 }
 .navegador {
     padding-left: 2%;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
-    color: #7D1A58;
+    color: #7D1A58;!important;
+    
 }
 .fondo{
     background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("../assetsimagenes/mesadulce8.jpg");
@@ -100,8 +102,10 @@ video {
     background-color: #E14D2A;
     position: absolute;
     width: 100%;
+    padding-right: 0;
     padding-left: 20%;
-    margin-top: auto;
+    bottom: 0;
+
 
 }
 .scroll {
