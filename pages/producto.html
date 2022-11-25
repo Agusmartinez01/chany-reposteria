@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chany Reposteria</title>
-    <link rel="icon" href="../assetsimagenes/logo1.png">
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
-    <header class="header">
-        <div class="header__imagen--div">
-            <img " src="../assetsimagenes/logo1.png"alt="logo" width="">
-        </div>
-        <nav class="header__nav>">
-            <ul class="header__nav__ul">
-                <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a" href="../index.html">INICIO</a>
-                    <a class="header__nav__ul__li__a" href="#">PRODUCTOS</a>
-                    <a class="header__nav__ul__li__a" href="./sobrenosotros.html">SOBRE NOSOTROS</a>
-                    <a class="header__nav__ul__li__a" href="./comocomprar.html">COMO COMPRAR</a>
-                    <a class="header__nav__ul__li__a" href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chany Reposteria</title>
+        <link rel="icon" href="../assetsimagenes/logo1.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body class="container-fluid fondo">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light colornav">
+                <div class="container-fluid">
+                    <img src="../assetsimagenes/logo1.png" alt="logo" width="110" height="110" class="d-inline-block align-text-top">
+                  <a class="navbar-brand navegador" href="../index.html">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active navegador" aria-current="page" href="#">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link navegador" href="../pages/sobrenosotros.html">Sobre Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link navegador" href="../pages/comocomprar.html">Como Comprar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link navegador" href="../pages/contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
 <main> 
     <!-- La idea de esta seccion es hacer una tienda, con botones para agregar al carrito y con mas imagenes que se puedan deslizar.
     Lo plasmo de esta forma momentaneamente -->
-    <h1>PRODUCTOS</h1>
+    <h1 class="text-white">PRODUCTOS</h1>
     <div>
          <img src="../assetsimagenes/torta2.jpg" alt="imagen torta" width="200">
          <h2>TORTAS</h2>
@@ -43,25 +58,23 @@
     </div>
 </main>
 
-<footer class="footer">
-    <h4 class="footer__h4">NAVEGACION</h4>
-    <ul class="footer__ul">
-        <li class="footer__ul__li">
-            <a class="footer__ul__li__a" href="../index.html">Inicio</a>
-            <a class="footer__ul__li__a" href="#">Productos</a>
-            <a class="footer__ul__li__a" href="./sobrenosotros.html">Sobre Nosotros</a>
-            <a class="footer__ul__li__a" href="./comocomprar.html">Como comprar</a>
-            <a class="footer__ul__li__a" href="./contacto.html">Contacto</a>
-        </li>
-    </ul>
-    <div class="footer__contenedor">
-        <h4 class="footer__contenedor__h4">CONTACTANOS</h4>
-            <p class="footer__contenedor__h4__p">Whataspp +11111111</p> 
-            <p class="footer__contenedor__h4__p">Correo: chanyreposteria@hotmail.om</p>
-            <p class="footer__contenedor__h4__p">Santa Fe, capital </p>
-    </div>
-</footer>
+<footer class="text-white footer footerscroll">
+    <div class="row">
+      <div class="col-4">
+        <a href=""><i class="ri-instagram-line icon"></i></a>
         
+      </div>
+      <div class="col-4">
+        <a href=""><i class="ri-facebook-circle-line icon"></i></a>
+        
+      </div>
+      <div class="col-4">
+        <a href=""><i class="ri-whatsapp-line icon"></i></a>
+        
+      </div>
+    </div>
+  </footer>
+  <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
     
     </html>

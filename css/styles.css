@@ -6,71 +6,104 @@
     box-sizing: border-box;
 
 }
-.header {
-    text-align:center;
-    
-  
-    
-}
-.header__nav__ul{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    list-style-type: none;
-  
+
+.colornav {
+    background-color: #FCF9C6;
+    width: 100%;
 }
 
-.header__nav__ul__li__a {
-    text-decoration: none;
-    color: blanchedalmond
+.nav-link{
+    font-size: 1.5rem;
 }
-.header__nav__ul__li__a:hover{
-    color: #9BFDC0
-}
-.header__imagen--div{
-    background-color:#FD9BA7;
-    text-align: left;
-}
-
-.footer {
+.navegador {
+    padding-left: 2%;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
-    color: blanchedalmond;
-    text-align:left;
-    background-color:#FD9BA7  
-}
-.footer__ul{
-    list-style-type: none
-}
-.footer__ul__li__a{
-    text-decoration: none;
-    color: blanchedalmond
-    ;
-}
-.footer__ul__li__a:hover{
-    color: #9BFDC0
-}
-.footer__contenedor {
-    text-align: center;
-    margin: 10px;
-
-}
-.main {
-    background-color: #FAEFA5;
-}
-.main__sobrenosotros{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
     color: #7D1A58;
 }
-.main__sobrenosotros__parrafos {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    font-size: 15px;
+.fondo{
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("../assetsimagenes/mesadulce8.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.contenedor{
-    background-color: #FAEFA5;
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+
+}
+.galeria {
+    width: 50%;
+}
+
+.carousel-item{
+    height: 50vh;
+ }
+ .carousel-item img{
+     height: 100%;
+     object-fit: cover;
+ }
+
+.titulocontacto {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.contacto {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.buttonenviar {
+    background-color: #497174;
+    border-color: #497174;
+}
+h3{
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 video {
     margin-top: 15px;
     padding-left: 350px;
+}
+@keyframes float {
+    0%{
+        transform: translateY(0); /*The starting point of the animation is 0.*/
+    }
+    50%{
+        transform: translateY(-1rem); /*The middle point of the animation is -15xp. This will move the element up.*/
+    }
+    100%{
+        transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
+    }
+}
+
+.icon{
+    display: inline-block;
+    font-size: 2rem;
+    color: #fff;
+    animation: float infinite 4s ease-in-out ;
+}
+.ri-facebook-circle-line{
+   animation-delay: 0.5s; /*Adds a animation delay of 1 seconds.*/
+}
+
+.ri-whatsapp-line{
+  animation-delay: 1s;
+}
+.footer {
+    background-color: #E14D2A;
+    position: absolute;
+    width: 100%;
+    padding-left: 20%;
+    margin-top: auto;
+
+}
+.scroll {
+    
 }

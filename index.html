@@ -6,62 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chany Reposteria</title>
     <link rel="icon" href="./assetsimagenes/logo1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-    
-    
-    <header class="header">
-        <div class="header__imagen--div">
-            <img " src="./assetsimagenes/logo1.png"alt="logo" width="">
-        </div>
-        <nav class="header__nav>">
-            <ul class="header__nav__ul">
-                <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a" href="#">INICIO</a>
-                    <a class="header__nav__ul__li__a" href="./pages/producto.html">PRODUCTOS</a>
-                    <a class="header__nav__ul__li__a" href="./pages/sobrenosotros.html">SOBRE NOSOTROS</a>
-                    <a class="header__nav__ul__li__a" href="./pages/comocomprar.html">COMO COMPRAR</a>
-                    <a class="header__nav__ul__li__a" href="./pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+<body class="container-fluid fondo">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light colornav">
+            <div class="container-fluid">
+                <img src="./assetsimagenes/logo1.png" alt="logo" width="110" height="110" class="d-inline-block align-text-top">
+              <a class="navbar-brand navegador" href="#">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active navegador" aria-current="page" href="./pages/producto.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navegador" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navegador" href="./pages/comocomprar.html">Como Comprar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navegador" href="./pages/contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-<main class="main">
-    <h1 class="main__h1">NOVEDADES</h1>
-    <section class="main__section">
-         <img class="main__section__img" src="./assetsimagenes/tortas.jfif" alt="imagen torta" width="200">
-            <button class="main__section__img__button">TORTAS</button>
-         <img class="main__section__img" src="./assetsimagenes/macarrons.jfif" alt="imagen macarrons" width="200">
-            <button class="main__section__img__button">MACARRONS</button>
-         <img class="main__section__img"src="./assetsimagenes/boxs.jfif" alt="imagen boxs" width="200">
-            <button class="main__section__img__button">BOXS</button>
-         <img class="main__section__img"src="./assetsimagenes/mesadulce7.jpg" alt="imagen mesas dulces" width="200">
-            <button class="main__section__img__button">MESAS DULCES</button>
-         <img class="main__section__img"src="./assetsimagenes/lettercake.jfif" alt="imagen lettercakes" width="200">
-            <button class="main__section__img__button">LETTERCAKES</button>
-    </section>
-</main>
-
-
-<footer class="footer">
-    <h4 class="footer__h4">NAVEGACION</h4>
-    <ul class="footer__ul">
-        <li class="footer__ul__li">
-            <a class="footer__ul__li__a" href="#">Inicio</a>
-            <a class="footer__ul__li__a" href="./pages/producto.htmll">Productos</a>
-            <a class="footer__ul__li__a" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
-            <a class="footer__ul__li__a" href="./pages/comocomprar.html">Como comprar</a>
-            <a class="footer__ul__li__a" href="./pages/contacto.html">Contacto</a>
-        </li>
-    </ul>
-    <div class="footer__contenedor">
-        <h4 class="footer__contenedor__h4">CONTACTANOS</h4>
-            <p class="footer__contenedor__h4__p">Whataspp +11111111</p> 
-            <p class="footer__contenedor__h4__p">Correo: chanyreposteria@hotmail.om</p>
-            <p class="footer__contenedor__h4__p">Santa Fe, capital </p>
+<main class="container-fluid principal">
+    <h1 class= "text-white mt-2" >Novedades</h1>
+    <div class="galeria mt-2">
+        <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assetsimagenes/torta2.jpg" class="d-block w-100" alt="imagentorta">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assetsimagenes/macarrons.jfif" class="d-block w-100" alt="imagen macarrons">
+                </div>
+                <div class="carousel-item">
+                     <img src="./assetsimagenes/boxs.jfif" class="d-block w-100" alt="imagenboxs">
+                </div>
+            </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+</main>
+<footer class="text-white footer">
+  <div class="row">
+    <div class="col-4">
+      <a href=""><i class="ri-instagram-line icon"></i></a>
+      
+    </div>
+    <div class="col-4">
+      <a href=""><i class="ri-facebook-circle-line icon"></i></a>
+      
+    </div>
+    <div class="col-4">
+      <a href=""><i class="ri-whatsapp-line icon"></i></a>
+      
+    </div>
+  </div>
 </footer>
-    
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
