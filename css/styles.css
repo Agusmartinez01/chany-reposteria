@@ -20,7 +20,7 @@
     padding-left: 2%;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
-    color: #7D1A58;!important;
+    color: #7D1A58 !important;
     
 }
 .fondo{
@@ -40,6 +40,9 @@
 h1 {
     font-family: 'Poppins', sans-serif;
 
+}
+body{
+    overflow-x: hidden;
 }
 .galeria {
     width: 50%;
@@ -71,17 +74,19 @@ h3{
 }
 video {
     margin-top: 15px;
-    padding-left: 350px;
+    padding-left: 450px;
+    width: 50%;
+    height: 50%
 }
 @keyframes float {
     0%{
-        transform: translateY(0); /*The starting point of the animation is 0.*/
+        transform: translateY(0); 
     }
     50%{
-        transform: translateY(-1rem); /*The middle point of the animation is -15xp. This will move the element up.*/
+        transform: translateY(-1rem);
     }
     100%{
-        transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
+        transform: translateY(0);
     }
 }
 
@@ -92,7 +97,7 @@ video {
     animation: float infinite 4s ease-in-out ;
 }
 .ri-facebook-circle-line{
-   animation-delay: 0.5s; /*Adds a animation delay of 1 seconds.*/
+   animation-delay: 0.5s;
 }
 
 .ri-whatsapp-line{
@@ -104,10 +109,8 @@ video {
     width: 100%;
     padding-right: 0;
     padding-left: 20%;
-    bottom: 0;
-
-
-}
-.scroll {
-    
+    /*con respecto al footer, no puedo lograr que quede abajo de todo en todas las paginas que tienen y no tienen scroll. 
+    si les pongo un botton:0 , en las paginas que no tiene scroll (como por ej el index) si me lo deja abajo de todo.pero 
+    en las paginas que si tienen scroll, el footer me queda en la mitad. 
+    En este caso le saque el bottom:0 y me queda bien cuando hay scroll peor mal cuando no hay scroll.*/ 
 }
