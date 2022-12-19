@@ -1,116 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Quicksand:wght@500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Quicksand:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-.colornav {
+.fondo {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assetsimagenes/mesadulce8.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden; }
+  .fondo .colornav {
     background-color: #FCF9C6;
-    width: 100%;
-}
+    width: 100%; }
 
-.nav-link{
-    font-size: 1.5rem;
+.nav-link {
+  font-size: 1.5rem;
+  padding-left: 2%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #7D1A58 !important; }
 
-}
-.navegador {
-    padding-left: 2%;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    color: #7D1A58 !important;
-    
-}
-.fondo{
-    background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("../assetsimagenes/mesadulce8.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .principal .galeria {
+    width: 50%; }
 
-.principal{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
 h1 {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif; }
 
-}
-body{
-    overflow-x: hidden;
-}
-.galeria {
-    width: 50%;
-}
+.carousel-item {
+  height: 50vh; }
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover; }
 
-.carousel-item{
-    height: 50vh;
- }
- .carousel-item img{
-     height: 100%;
-     object-fit: cover;
- }
-
-.titulocontacto {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
 .contacto {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
+  color: white;
+  font-family: "Poppins", sans-serif; }
+
 .buttonenviar {
-    background-color: #497174;
-    border-color: #497174;
-}
-h3{
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
-video {
-    margin-top: 15px;
-    padding-left: 450px;
-    width: 50%;
-    height: 50%
-}
+  background-color: #497174;
+  border-color: #497174; }
+
+h3 {
+  color: white;
+  font-family: "Poppins", sans-serif; }
+
 @keyframes float {
-    0%{
-        transform: translateY(0); 
-    }
-    50%{
-        transform: translateY(-1rem);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-1rem); }
+  100% {
+    transform: translateY(0); } }
 
-.icon{
-    display: inline-block;
-    font-size: 2rem;
-    color: #fff;
-    animation: float infinite 4s ease-in-out ;
-}
-.ri-facebook-circle-line{
-   animation-delay: 0.5s;
-}
+.icon {
+  display: inline-block;
+  font-size: 2rem;
+  color: #fff;
+  animation: float infinite 4s ease-in-out; }
 
-.ri-whatsapp-line{
-  animation-delay: 1s;
-}
+.ri-facebook-circle-line {
+  animation-delay: 0.5s; }
+
+.ri-whatsapp-line {
+  animation-delay: 1s; }
+
 .footer {
-    background-color: #E14D2A;
-    position: absolute;
-    width: 100%;
-    padding-right: 0;
-    padding-left: 20%;
-    /*con respecto al footer, no puedo lograr que quede abajo de todo en todas las paginas que tienen y no tienen scroll. 
-    si les pongo un botton:0 , en las paginas que no tiene scroll (como por ej el index) si me lo deja abajo de todo.pero 
-    en las paginas que si tienen scroll, el footer me queda en la mitad. 
-    En este caso le saque el bottom:0 y me queda bien cuando hay scroll peor mal cuando no hay scroll.*/ 
-}
+  background-color: #E14D2A;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-right: 0;
+  padding-left: 20%;
+  padding-top: 1%; }
