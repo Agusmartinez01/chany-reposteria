@@ -71,7 +71,9 @@ h3 {
   animation-delay: 1s; }
 
 .footer {
+  background-color: #E14D2A;
   width: 100%;
+  position: fixed;
   bottom: 0;
   padding-right: 0;
   padding-left: 20%;
