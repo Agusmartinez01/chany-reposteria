@@ -1,0 +1,21 @@
+@mixin gradient-cover-fixed-center-norepet-hidden {
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("../assetsimagenes/mesadulce8.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+@mixin nav-estilos {
+    font-size: 1.5rem;
+    padding-left: 2%;
+    font-family:$tipografia-principal;
+    font-weight: 500;
+    color: #7D1A58 !important
+}
+@mixin flex-column-around-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
